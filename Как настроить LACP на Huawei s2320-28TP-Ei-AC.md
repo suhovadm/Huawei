@@ -46,9 +46,12 @@ Eth-Trunk 1 для 0/0/4
 return  
 save  
 
-7)	Проверяем, что LACP работает.  
+7)	Проверяем, что LACP работает.   
+
 display Eth-Trunk 1  
+
 и смотрим…  
+
 Operation Status: UP  
 Number of up ports: 2  
 Working mode: LACP  
