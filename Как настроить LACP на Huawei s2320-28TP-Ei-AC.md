@@ -31,12 +31,12 @@ quit
 system-view  
 
 interface GigabitEthernet0/0/3  
-undo shutdown  
 clear configuration this  
+undo shutdown  // это значит принудительно включить порт, т.к. после команды clear configuration this, порт будет принудительно выключен (*down).
 
 interface GigabitEthernet0/0/4  
-undo shutdown  
 clear configuration this  
+undo shutdown   
 
 и снова добавляем их в Trunk:  
 Eth-Trunk 1 для 0/0/3  
