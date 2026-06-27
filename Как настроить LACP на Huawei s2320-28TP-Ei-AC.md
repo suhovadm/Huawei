@@ -56,11 +56,11 @@ Operation Status: DOWN
 Number of up ports: 0  
 Working mode: LACP  
  
-8)	Можно проверить порты по отдельности:  
+8)	Также можно проверить порты по отдельности:  
 display interface GigabitEthernet0/0/3  
 display interface GigabitEthernet0/0/4  
 
-Смотрим самую первую строчку:  
+Смотрим самую первую строчку, в ней должно быть вот так:  
 LINE PROTOCOL CURRENT STATE: UP  
 
 9)	Теперь пропишем, что можно передавать в LACP.  
@@ -69,4 +69,5 @@ interface Eth-Trunk 1
 port link-type trunk  
 port trunk allow-pass vlan 10 99  
 quit  
-Говорим, что через LACP можно передавать 10 и 99 VLAN, клиенты и управление.  
+
+Говорим, что через LACP можно передавать 10 и 99 VLAN, клиенты (10) и управление (99).  
