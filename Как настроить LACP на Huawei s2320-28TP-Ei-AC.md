@@ -40,7 +40,7 @@ undo shutdown
 
 display interface brief // проверяем состояние портов. Они должны быть в up-e, т.е. включены.  
 
-и снова добавляем их в Trunk:  
+И снова добавляем их в Trunk:  
 Eth-Trunk 1 для 0/0/3  
 Eth-Trunk 1 для 0/0/4  
 
